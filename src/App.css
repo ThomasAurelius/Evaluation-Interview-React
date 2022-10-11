@@ -1,0 +1,136 @@
+.App-main {
+  padding: 10px;
+}
+
+.App-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin: 0 100px;
+  gap: 10px;
+}
+
+.App-settings {
+  margin: 0 100px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-options {
+  display: flex;
+  gap: 25px;
+}
+
+.App-options > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.App-pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.User-card {
+  background-color: #bbbbbb;
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+.User-avatar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.User-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.User-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.User-info > p {
+  margin: 0;
+}
+
+.User-info > p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.User-info > p:last-child {
+  font-size: 12px;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+
+.User-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  justify-content: space-around;
+}
+
+.Text-small {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.Text-medium {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Text-large {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.Text-right {
+  text-align: right;
+}
+
+.Text-accent-1 {
+  color: #f66f16;
+}
+
+.Text-accent-2 {
+  color: #1673f6;
+}
+
+.Text-accent-3 {
+  color: #10ae1b;
+}
+
+.Chart-container {
+  width: 150px;
+  height: 100px;
+  max-width: 300px;
+}
+
+.User-avatar-group {
+  position: relative;
+}
+
+.User-avatar-group > p {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  display: none;
+}
+
+.User-avatar-letter {
+  display: block;
+}
