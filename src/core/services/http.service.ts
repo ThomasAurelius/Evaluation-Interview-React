@@ -1,5 +1,5 @@
 import ky from "ky";
-import { environment } from "./environment";
+import environment from "src/environment";
 
 const http = ky.create({
   prefixUrl: environment.http.base,

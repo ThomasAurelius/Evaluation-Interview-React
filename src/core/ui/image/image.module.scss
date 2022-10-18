@@ -1,0 +1,12 @@
+@import "src/styles/mixins.scss";
+
+.image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--background-2);
+
+  @include flex(center, center);
+}
+
+// 604 619 6402

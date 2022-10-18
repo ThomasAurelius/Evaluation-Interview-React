@@ -1,14 +1,7 @@
-import { ResponsiveLine } from "@nivo/line";
-import { useEffect, useMemo, useState } from "react";
-import { TLog } from "./models";
+import { useEffect, useState } from "react";
+import { ChartProps, Serie } from "./chart.props";
 
-type ChartProps = {
-  data: TLog[];
-};
-
-type Serie = { x: string; y: number };
-
-const Chart: React.FC<ChartProps> = (props) => {
+const useChartHook = (props: ChartProps) => {
   const [data, setData] = useState<Serie[]>([]);
   const [xLegend, setXLegend] = useState("");
 
@@ -39,25 +32,7 @@ const Chart: React.FC<ChartProps> = (props) => {
     setXLegend(`Conversions ${start} - ${end}`);
   }, []);
 
-  return (
-    <div className="Chart-container">
-      <ResponsiveLine
-        margin={{ bottom: 10 }}
-        data={[
-          {
-            id: "conversionByDay",
-            data,
-          },
-        ]}
-        enablePoints={false}
-        enableGridX={false}
-        enableGridY={false}
-        isInteractive={false}
-        axisBottom={{ legend: xLegend, renderTick: () => <></> }}
-        colors={{ scheme: "greys" }}
-      />
-    </div>
-  );
+  return { data, xLegend };
 };
 
-export { Chart };
+export { useChartHook };

@@ -1,0 +1,25 @@
+@import "src/styles/mixins.scss";
+
+.main {
+  @include flex(inherit, flex-start, column);
+
+  gap: 15px;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+
+    @include md {
+      grid-template-columns: auto auto;
+    }
+
+    @include lg {
+      grid-template-columns: auto auto auto;
+    }
+
+    @include xl {
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+}

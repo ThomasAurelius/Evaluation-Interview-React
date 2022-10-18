@@ -1,0 +1,36 @@
+@mixin sm() {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin md() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin xxl() {
+  @media (min-width: 1536px) {
+    @content;
+  }
+}
+
+@mixin flex($align: center, $justify: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}

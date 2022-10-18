@@ -1,0 +1,15 @@
+.button {
+  padding: 5px 10px;
+  background-color: var(--background-2);
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:enabled:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+}

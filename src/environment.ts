@@ -1,8 +1,13 @@
+/**
+ * TODO: this object should be either validated or have a fallback values
+ * Non-null assertion to simplify
+ */
 const environment = {
   http: {
-    base: "https://api.airtable.com/v0/appBTaX8XIvvr6zEC",
-    apiKey: "Bearer key4v56MUqVr9sNJv",
+    base: process.env.REACT_APP_HTTP_API_BASE!,
+    apiKey: process.env.REACT_APP_HTTP_API_KEY!,
   },
+  nodeEnv: process.env.NODE_ENV,
 };
 
-export { environment };
+export default environment;

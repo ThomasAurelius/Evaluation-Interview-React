@@ -1,0 +1,30 @@
+@import "src/styles/mixins.scss";
+
+.userCard {
+  background-color: var(--background-3);
+  padding: 15px;
+
+  &-header {
+    @include flex(flex-start, flex-start, row);
+
+    gap: 25px;
+  }
+
+  &-content {
+    @include flex(center, flex-start, row);
+
+    gap: 25px;
+
+    &--accent-2 {
+      color: var(--color-2);
+    }
+
+    &--accent-3 {
+      color: var(--color-3);
+    }
+
+    &--accent-4 {
+      color: var(--color-4);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "src/styles/mixins.scss";
+
+.app {
+  color: var(--color-1);
+  margin: 0 20px;
+
+  @include md {
+    margin: auto 30px;
+  }
+
+  @include xl {
+    margin: auto 100px;
+  }
+}

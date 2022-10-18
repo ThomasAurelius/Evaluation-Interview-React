@@ -16,4 +16,10 @@ type TLog = {
   user_id: number;
 };
 
-export type { TUser, TLog };
+type Sort = ["Id", "Name"];
+type Size = [10, 15, 20];
+
+export type { TUser, TLog, Size, Sort };
+
+export * from "./error";
+export * from "./state";
