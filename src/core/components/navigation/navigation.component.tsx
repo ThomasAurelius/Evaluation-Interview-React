@@ -43,7 +43,7 @@ const Navigation: React.FC<NavigationProps> = () => {
       </div>
       <div className={styles["navigation-pagination"]}>
         <Button disabled={pointer === 1} onClick={handlePrevious}>
-          Previus
+          Previous
         </Button>
         <Button disabled={!offset} onClick={handleNext}>
           Next
